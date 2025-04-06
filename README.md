@@ -19,7 +19,7 @@ recreating the issue discussed in [this](https://github.com/N00byKing/APCpp/pull
 >    --passive^
 >    --channelId VisualStudio.17.Release^
 >    --productId Microsoft.VisualStudio.Product.BuildTools^
->    --add Microsoft.VisualStudio.Workload.NativeDesktop;includeRecommended
+>    --add Microsoft.VisualStudio.Workload.VCTools;includeRecommended
 >  ```
 
 3. `cd` into the repo
