@@ -7,12 +7,7 @@ recreating the issue discussed in [this](https://github.com/N00byKing/APCpp/pull
 
 1. Clone this repository on a windows machine
 
-2. Initialize submodules
-  ```
-  git submodule update --recursive --init
-  ```
-
-3. Open "Developer Command Prompt for VS 2022"
+2. Open "Developer Command Prompt for VS 2022"
 
 > [!NOTE]
 >  This can be installed using an administrator command prompt and the following commands:
@@ -27,6 +22,25 @@ recreating the issue discussed in [this](https://github.com/N00byKing/APCpp/pull
 >    --add Microsoft.VisualStudio.Workload.NativeDesktop;includeRecommended
 >  ```
 
-4. `cd` into the repo
+3. `cd` into the repo
+
+4. Initialize submodules
+  ```
+  git submodule update --recursive --init
+  ```
 
 5. run `cmake -B build`
+
+## Try out solutions
+
+This repo has multiple branches
+
+ - master: reproduces the issue
+ - my_fix: fix with WORKING_DIRECTORY
+ - N00byking_fix: fix with CMAKE_CURRENT_BINARY_DIR
+
+To try these out switch to the branch and run
+```
+git submodule update --recursive --init
+```
+again in order to make sure you are using the correct commit for the submodule
