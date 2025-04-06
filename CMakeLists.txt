@@ -3,4 +3,7 @@ project(
   ApCpp_Mrp 
   VERSION 0.0.1
 )
-add_executable(main hello_world.cpp)
+add_executable("${PROJECT_NAME}" hello_world.cpp)
+add_subdirectory(APCpp APCpp)
+target_include_directories("${PROJECT_NAME}" PRIVATE APCpp)
+target_link_libraries("${PROJECT_NAME}" APCpp)
