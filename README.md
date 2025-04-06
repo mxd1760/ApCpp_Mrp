@@ -44,3 +44,5 @@ To try these out switch to the branch and run
 git submodule update --recursive --init
 ```
 again in order to make sure you are using the correct commit for the submodule
+
+also delete the build folder since cmake will use old settings if it can find them in there
