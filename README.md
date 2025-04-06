@@ -29,7 +29,7 @@ recreating the issue discussed in [this](https://github.com/N00byKing/APCpp/pull
   git submodule update --recursive --init
   ```
 
-5. run `cmake -B build`
+5. run `cmake -B build -D ^"CMAKE_TOOLCHAIN_FILE=%VCPKG_ROOT%\scripts\buildsystems\vcpkg.cmake^"`
 
 ## Try out solutions
 
